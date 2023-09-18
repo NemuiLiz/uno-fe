@@ -1,0 +1,46 @@
+<svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 362">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #d40000;
+      }
+
+      .cls-4 {
+        fill: #d40000;
+      }
+
+      .cls-5 {
+        fill: #d40000;
+      }
+
+      .cls-6 {
+        fill: #d40000;
+      }
+
+      .cls-7 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 0;
+      }
+    </style>
+  </defs>
+  <title>Wild card</title>
+  <g id="g9888-0">
+    <rect id="rect2987-8-5-81-2-4" class="cls-1" x="1" y="1" width="240" height="360" rx="40" ry="40"/>
+    <rect id="rect3757-26-33-5-9-0" x="21" y="21" width="200" height="320" rx="20" ry="20"/>
+    <path id="path3773-0-4-8-4-60-3-86-5-7" class="cls-2" d="M181,81A160,160,0,0,0,21,241a40,40,0,0,0,40,40A160,160,0,0,0,221,121,40,40,0,0,0,181,81Z"/>
+    <path id="path3773-0-4-8-8-7-9-0-9" class="cls-3" d="M32.75,181A159.39,159.39,0,0,0,21,241a40,40,0,0,0,40,40l60-100Z"/>
+    <path id="path3773-0-4-8-8-5-6-5-0-08" class="cls-4" d="M121,181,61,281A160,160,0,0,0,209.25,181Z"/>
+    <path id="path3773-0-4-8-8-1-4-3-1" class="cls-5" d="M181,81A160,160,0,0,0,32.75,181H121Z"/>
+    <path id="path3773-0-4-8-8-5-8-3-9-4" class="cls-6" d="M181,81,121,181h88.25A159.39,159.39,0,0,0,221,121,40,40,0,0,0,181,81Z"/>
+  </g>
+</svg>

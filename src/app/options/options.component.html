@@ -1,1 +1,29 @@
-<p>options works!</p>
+<div class="options">
+  <h2>Options/Preferences</h2>
+
+  <!-- Fullscreen -->
+  <label>
+    <input type="checkbox" [(ngModel)]="fullScreen"> Full Screen
+  </label>
+  <button (click)="toggleFullscreen()">Toggle Fullscreen</button>
+
+  <!-- Sound -->
+  <label>
+    <input type="checkbox" [(ngModel)]="soundEnabled"> Sound
+  </label>
+  <button (click)="testSound()">Test Sound</button>
+
+  <!-- Language -->
+<!--  <label for="language">Select Language:</label>-->
+<!--  <select id="language" [(ngModel)]="selectedLanguage" (change)="changeLanguage()">-->
+<!--    <option value="en">English</option>-->
+<!--    <option value="de">German</option>-->
+<!--  </select>-->
+  <!-- Level -->
+<!--  <label for="difficulty">Select Difficulty:</label>-->
+<!--  <select id="difficulty" [(ngModel)]="selectedDifficulty">-->
+<!--    <option value="easy">Easy</option>-->
+<!--    <option value="medium">Medium</option>-->
+<!--    <option value="hard">Hard</option>-->
+<!--  </select>-->
+</div>

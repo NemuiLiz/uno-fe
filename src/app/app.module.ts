@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MultiplayerComponent } from './multiplayer/multiplayer.component';
 import { ScoreComponent } from './score/score.component';
 import { OptionsComponent } from './options/options.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OptionsComponent } from './options/options.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
