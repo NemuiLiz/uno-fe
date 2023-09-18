@@ -4,8 +4,10 @@ import {GameComponent} from "./game/game.component";
 import {MultiplayerComponent} from "./multiplayer/multiplayer.component";
 import {ScoreComponent} from "./score/score.component";
 import {OptionsComponent} from "./options/options.component";
+import {LobbyComponent} from "./lobby/lobby.component";
 
 const routes: Routes = [
+  { path: '', component: LobbyComponent},
   { path: 'game', component: GameComponent},
   { path: 'multiplayer', component: MultiplayerComponent},
   { path: 'score', component: ScoreComponent},
