@@ -8,7 +8,7 @@ import {OptionsComponent} from "./options/options.component";
 const routes: Routes = [
   { path: 'game', component: GameComponent},
   { path: 'multiplayer', component: MultiplayerComponent},
-  { path : 'score', component: ScoreComponent},
+  { path: 'score', component: ScoreComponent},
   { path: 'options', component: OptionsComponent}
 ];
 
