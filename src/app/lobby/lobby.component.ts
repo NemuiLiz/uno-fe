@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-lobby',
+  selector: 'lobby',
   templateUrl: './lobby.component.html',
   styleUrls: ['./lobby.component.css']
 })

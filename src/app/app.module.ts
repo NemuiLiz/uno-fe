@@ -7,6 +7,10 @@ import { CardComponent } from './card/card.component';
 import { GameComponent } from './game/game.component';
 import { LobbyComponent } from './lobby/lobby.component';
 import { PlayerComponent } from './player/player.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MultiplayerComponent } from './multiplayer/multiplayer.component';
+import { ScoreComponent } from './score/score.component';
+import { OptionsComponent } from './options/options.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { PlayerComponent } from './player/player.component';
     CardComponent,
     GameComponent,
     LobbyComponent,
-    PlayerComponent
+    PlayerComponent,
+    NavbarComponent,
+    MultiplayerComponent,
+    ScoreComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
