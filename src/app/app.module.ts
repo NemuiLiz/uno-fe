@@ -15,6 +15,7 @@ import {FormsModule} from "@angular/forms";
 import { DeckComponent } from './deck/deck.component';
 import {RxStompService} from "../websocket/rx-stomp.service";
 import {rxStompServiceFactory} from "../websocket/rx-stomp-service-factory";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {rxStompServiceFactory} from "../websocket/rx-stomp-service-factory";
     MultiplayerComponent,
     ScoreComponent,
     OptionsComponent,
-    DeckComponent
+    DeckComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

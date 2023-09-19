@@ -5,13 +5,16 @@ import {MultiplayerComponent} from "./multiplayer/multiplayer.component";
 import {ScoreComponent} from "./score/score.component";
 import {OptionsComponent} from "./options/options.component";
 import {LobbyComponent} from "./lobby/lobby.component";
+import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [
   { path: '', component: LobbyComponent},
   { path: 'game', component: GameComponent},
   { path: 'multiplayer', component: MultiplayerComponent},
   { path: 'score', component: ScoreComponent},
-  { path: 'options', component: OptionsComponent}
+  { path: 'options', component: OptionsComponent},
+  { path: 'login', component: LoginComponent},
+
 ];
 
 @NgModule({
