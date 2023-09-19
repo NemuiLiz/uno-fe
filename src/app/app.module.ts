@@ -12,6 +12,7 @@ import { MultiplayerComponent } from './multiplayer/multiplayer.component';
 import { ScoreComponent } from './score/score.component';
 import { OptionsComponent } from './options/options.component';
 import {FormsModule} from "@angular/forms";
+import { DeckComponent } from './deck/deck.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FormsModule} from "@angular/forms";
     NavbarComponent,
     MultiplayerComponent,
     ScoreComponent,
-    OptionsComponent
+    OptionsComponent,
+    DeckComponent
   ],
   imports: [
     BrowserModule,
