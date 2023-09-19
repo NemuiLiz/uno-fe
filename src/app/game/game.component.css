@@ -1,0 +1,7 @@
+/*.quit-btn {*/
+/*  position: absolute;*/
+/*  top: 500px;*/
+/*  left: 300px;*/
+/*  z-index: 1; !* Ensures all cards are stacked on top of each other *!*/
+/*  transition: top 0.3s ease, left 0.3s ease; !* Add a smooth transition effect *!*/
+/*}*/
