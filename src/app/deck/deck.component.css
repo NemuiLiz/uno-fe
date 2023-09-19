@@ -1,0 +1,12 @@
+.deck {
+  position: absolute;
+  top: 300px; /* Adjust as needed */
+  left: 800px; /* Adjust as needed */
+  z-index: 1; /* Ensures all cards are stacked on top of each other */
+  transition: top 0.3s ease, left 0.3s ease; /* Add a smooth transition effect */
+}
+
+/*!* Style for the top card in the stack *!*/
+/*.deck:first-child {*/
+/*  !* Add styles for the top card *!*/
+/*}*/

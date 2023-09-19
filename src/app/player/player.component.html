@@ -1,1 +1,3 @@
-<p>player works!</p>
+<div> {{ player.name }} ({{ player.points }})</div>
+<div class="cards"><card *ngFor="let p of player.cards" [card]="p" [hidden]="isEnemy"></card></div>
+

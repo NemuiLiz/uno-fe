@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Player} from "../../models/player";
 
 @Component({
   selector: 'player',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./player.component.css']
 })
 export class PlayerComponent {
+
+  @Input() public player! : Player;
+  @Input() public isEnemy : boolean = false;
+
 
 }
