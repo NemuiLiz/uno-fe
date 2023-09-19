@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-multiplayer',
+  selector: 'multiplayer',
   templateUrl: './multiplayer.component.html',
   styleUrls: ['./multiplayer.component.css']
 })

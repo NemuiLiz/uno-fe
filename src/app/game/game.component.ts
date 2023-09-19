@@ -18,6 +18,7 @@ export class GameComponent {
   card5: Card = {id: 5, color: Color.RED, numeration: Numeration.SPECIAL_EFFECT, specialEffect: SpecialEffect.COLOR_WISH};
   card6: Card = {id: 6, color: Color.RED, numeration: Numeration.SPECIAL_EFFECT, specialEffect: SpecialEffect.DRAW_TWO};
   card7: Card = {id: 7, color: Color.RED, numeration: Numeration.SPECIAL_EFFECT, specialEffect: SpecialEffect.REVERSE};
+
   giveUp() {
 
   }

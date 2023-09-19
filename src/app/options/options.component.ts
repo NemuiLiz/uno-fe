@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {FullscreenService} from "../fullscreen.service";
-import {SoundService} from "../sound.service";
+import {FullscreenService} from "../services/fullscreen.service";
+import {SoundService} from "../services/sound.service";
 
 @Component({
-  selector: 'app-options',
+  selector: 'options',
   templateUrl: './options.component.html',
   styleUrls: ['./options.component.css']
 })
