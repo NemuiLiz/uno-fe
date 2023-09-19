@@ -1,23 +1,24 @@
 <div class="row">
   <div class="col">
-    <p>GAME</p>
-<!--    <app-card [card]="card1" [hidden]="true"></app-card>-->
-<!--    <app-card [card]="card2"></app-card>-->
-<!--    <app-card [card]="card3"></app-card>-->
-<!--    <app-card [card]="card4"></app-card>-->
-<!--    <app-card [card]="card5"></app-card>-->
-<!--    <app-card [card]="card6"></app-card>-->
-<!--    <app-card [card]="card7"></app-card>-->
+    <div class="game-bg-img"></div>
+    <!--card *ngFor="let card of player?.cards"></card-->
+    <card [card]="card1" [hidden]="true"></card>
+    <card [card]="card2"></card>
+    <card [card]="card3"></card>
+    <card [card]="card4"></card>
+    <card [card]="card5"></card>
+    <card [card]="card6"></card>
+    <card [card]="card7"></card>
   </div>
 
-  <app-player [player]="player1"></app-player>
-  <app-player [player]="player2" [isEnemy]="true"></app-player>
+  <player [player]="player1"></player>
+  <player [player]="player2" [isEnemy]="true"></player>
 <!--  <app-deck [cards]="cards" [hidden]="false"></app-deck>-->
 <!--  <app-deck [cards]="cards" [hidden]="true"></app-deck>-->
 </div>
 
 <div class="row">
-    <div class="text-center quit-btn">
-      <button class="btn-danger" (click)="giveUp()" routerLink="lobby">Quit</button>
+    <div class="text-center">
+      <button class="btn btn-danger" (click)="giveUp()" routerLink="lobby" type="button">Quit</button>
     </div>
 </div>

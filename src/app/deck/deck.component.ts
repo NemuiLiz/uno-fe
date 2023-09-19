@@ -1,10 +1,10 @@
-import {Component, Input} from '@angular/core';
-import {Player} from "../../models/player";
-import {Card} from "../../models/card";
-import {Deck} from "../../models/deck";
+import { Component, Input } from '@angular/core';
+import { Player } from "../../models/player";
+import { Card } from "../../models/card";
+import { Deck } from "../../models/deck";
 
 @Component({
-  selector: 'app-deck',
+  selector: 'deck',
   templateUrl: './deck.component.html',
   styleUrls: ['./deck.component.css']
 })

@@ -1,4 +1,4 @@
-import {Card} from "./card";
+import { Card } from "./card";
 
 export interface Player {
   id: number;           // Unique identifier for the player

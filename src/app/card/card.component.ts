@@ -4,7 +4,7 @@ import {Numeration} from "../../models/numeration";
 import {SpecialEffect} from "../../models/specialEffect";
 
 @Component({
-  selector: 'app-card',
+  selector: 'card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
