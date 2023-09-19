@@ -13,6 +13,8 @@ import { ScoreComponent } from './score/score.component';
 import { OptionsComponent } from './options/options.component';
 import {FormsModule} from "@angular/forms";
 import { DeckComponent } from './deck/deck.component';
+import {RxStompService} from "../websocket/rx-stomp.service";
+import {rxStompServiceFactory} from "../websocket/rx-stomp-service-factory";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { DeckComponent } from './deck/deck.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: RxStompService, useFactory: rxStompServiceFactory
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
