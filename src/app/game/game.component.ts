@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Color} from "../../models/color";
 import {Numeration} from "../../models/numeration";
 import {SpecialEffect} from "../../models/specialEffect";
@@ -9,7 +9,11 @@ import {Card} from "../../models/card";
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css']
 })
-export class GameComponent {
+export class GameComponent implements OnInit{
+  //constructor(private playerService: PlayerService, private cardService: CardService) {}
+
+  ngOnInit() {
+  }
 
   card1: Card = {id: 1, color: Color.BLUE, numeration: Numeration.SEVEN, specialEffect: SpecialEffect.NULL};
   card2: Card = {id: 2, color: Color.GREEN, numeration: Numeration.TWO, specialEffect: SpecialEffect.NULL};
