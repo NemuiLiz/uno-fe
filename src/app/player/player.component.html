@@ -1,3 +1,4 @@
+
 <div> {{ player.name }} ({{ player.points }})</div>
-<div class="cards"><card *ngFor="let p of player.cards" [card]="p" [hidden]="isEnemy"></card></div>
+<div class="cards player-hand"><card *ngFor="let p of player.cards" [card]="p" [hidden]="isEnemy"></card></div>
 
