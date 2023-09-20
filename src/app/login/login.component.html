@@ -1,4 +1,13 @@
-<div>
-  <input [(ngModel)]="playerName" type="text" class="form-control" placeholder="Playername">
-  <button class="btn btn-outline-success mt-1 me-2 btn-lg" type="button" (click)="login()">Start</button>
+<div class="row">
+  <div class="col">
+    <div *ngFor="let p of player">{{ p.name }}</div>
+      <div class="mb-3">
+        <label for="playerNameLabel" class="form-label">Player Name</label>
+        <input [(ngModel)]="playerName" type="text" id="playerNameLabel" class="form-control">
+        <button class="btn btn-outline-success mt-1 me-2" type="button" (click)="login()">Login</button>
+        <button class="btn btn-outline-success mt-1 me-2" type="button" (click)="startGame()" *ngIf="player.length >= 4">Start Game</button>
+      </div>
+
+  </div>
 </div>
+
