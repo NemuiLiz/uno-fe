@@ -3,11 +3,10 @@
     <div *ngFor="let p of player">{{ p.name }}</div>
       <div class="mb-3">
         <label for="playerNameLabel" class="form-label">Player Name</label>
-        <input [(ngModel)]="playerName" type="text" id="playerNameLabel" class="form-control">
+        <input [(ngModel)]="playerName" type="text" id="playerNameLabel" class="form-control" [value]="playerName">
         <button class="btn btn-outline-success mt-1 me-2" type="button" (click)="login()">Login</button>
         <button class="btn btn-outline-success mt-1 me-2" type="button" (click)="startGame()" *ngIf="player.length >= 4">Start Game</button>
       </div>
-
   </div>
 </div>
 

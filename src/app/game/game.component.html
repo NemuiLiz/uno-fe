@@ -2,17 +2,16 @@
   <div class="col">
     <div class="game-bg-img"></div>
     <!--card *ngFor="let card of player?.cards"></card-->
-      <div class="card-deck">
-        <card [card]="card2"></card>
-        <div class="card-deck-item1">
-          <card [card]="card3"></card>
-        </div>
-      </div>
+<!--      <div class="card-deck">-->
+<!--        <card [card]="card2"></card>-->
+<!--        <div class="card-deck-item1">-->
+<!--          <card [card]="card3"></card>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <player [player]="player1" class="player-hand"></player>
-      <player [player]="player2" [isEnemy]="true" class="opponent-hand"></player>
-      <!--  <deck [cards]="cards" [hidden]="false"></deck>-->
-      <!--  <deck [cards]="cards" [hidden]="true"></deck>-->
+      <player *ngFor="let p of game?.players" [player]="p" class="player-hand" ></player>
+    <deck *ngIf="game" [deck]="game.discardPile"></deck>
+    <deck *ngIf="game" [deck]="game.drawPile" [hidden]="true"></deck>
   </div>
 </div>
 <div class="row">
