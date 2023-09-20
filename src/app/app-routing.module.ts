@@ -10,7 +10,7 @@ import {LoginComponent} from "./login/login.component";
 const routes: Routes = [
   { path: '', component: LobbyComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'game', component: GameComponent},
+  { path: 'login/game', component: GameComponent},
   { path: 'multiplayer', component: MultiplayerComponent},
   { path: 'score', component: ScoreComponent},
   { path: 'options', component: OptionsComponent}

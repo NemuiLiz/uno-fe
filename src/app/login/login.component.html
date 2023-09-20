@@ -1,13 +1,24 @@
-<div class="row">
-  <div class="col">
-    <div *ngFor="let p of player">{{ p.name }}</div>
-      <div class="mb-3">
-        <label for="playerNameLabel" class="form-label">Player Name</label>
-        <input [(ngModel)]="playerName" type="text" id="playerNameLabel" class="form-control">
-        <button class="btn btn-outline-success mt-1 me-2" type="button" (click)="login()">Login</button>
-        <button class="btn btn-outline-success mt-1 me-2" type="button" (click)="startGame()" *ngIf="player.length >= 4">Start Game</button>
-      </div>
-
+<div class="container text-center">
+  <div class="row mt-4">
+    <div class="col-4 mt-5">
+    <img src="./assets/cards/wild-draw_four.svg" class="rounded uno-img" alt="">
+    </div>
+    <div class="col-4 col-md-auto">
+        <div class="mb-3">
+          <input [(ngModel)]="playerName" type="text" id="playerNameLabel" class="form-control" placeholder="Enter your Name">
+          <button class="btn btn-outline-success mt-3 me-2" type="button" (click)="login()">Login</button>
+          <button class="btn btn-success mt-3 me-2" type="button" routerLink="game" (click)="startGame()" *ngIf="player.length >= 4">Start Game</button>
+        </div>
+      <ul class="list-group mt-2">
+        <li *ngFor="let p of player" class="list-group-item d-flex justify-content-between align-items-center">
+          {{ p.name }}
+          <span class="badge bg-dark-subtle rounded-pill text-end">Player Score: {{ p.points }}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-4 mt-5">
+      <img src="./assets/cards/green-5.svg" class="rounded uno-img" alt="">
+    </div>
   </div>
 </div>
 

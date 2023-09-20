@@ -12,7 +12,7 @@ import { RxStompService } from "../../websocket/rx-stomp.service";
 export class LoginComponent implements OnInit, OnDestroy{
 
   private topicSubscription!: Subscription;
-  public player!: Player[];
+  public player: Player[] = [];
 
   constructor(private rxStompService: RxStompService) { }
 
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit, OnDestroy{
   login() {
     this.rxStompService.publish({
       destination: "/app/addPlayer",
-      body: JSON.stringify(this.playerName)
+      body: this.playerName
     })
   }
 
